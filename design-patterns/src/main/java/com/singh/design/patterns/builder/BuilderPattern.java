@@ -5,6 +5,11 @@ import com.singh.design.patterns.enums.DesignPatternName;
 
 public class BuilderPattern implements DesignPattern {
     @Override
+    public DesignPatternName getName() {
+        return DesignPatternName.BUILDER;
+    }
+
+    @Override
     public void run() {
         System.out.println("Creating a Player with Builder pattern.");
         Player player1 = new Player.PlayerBuilder()
@@ -15,10 +20,5 @@ public class BuilderPattern implements DesignPattern {
                 .build();
 
         System.out.println(player1.toString());
-    }
-
-    @Override
-    public DesignPatternName getName() {
-        return DesignPatternName.BUILDER;
     }
 }
