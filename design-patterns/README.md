@@ -12,7 +12,7 @@ It is a creational design pattern where we have a class (called factory) which g
 > 
 > Cons: Can make the code complex and hard to understand, takes time to set up (boilerplate code)
 
-Implemented in **DesignPatternFactory**
+Implemented in **DesignPatternFactory**.
 
 ## Singleton Pattern
 It is a creational design pattern which ensures there is only one instance of the class in the application. This is used when we only want to have 1 object of a class in the application and don’t want want any part of the application to make a new obejct of the class. In such scenario, we use this pattern. Here we make the constructor private and expose a static public method which returns the instance of the class (initializes if its NULL initially).
@@ -20,6 +20,19 @@ It is a creational design pattern which ensures there is only one instance of th
 > 
 > Cons: Peope tend to overuse it, thread safety must be ensured, cannot use with parameters as that’ll make it factory instead
 
-Also implemented in **DesignPatternFactory**
+Also implemented in **DesignPatternFactory**.
 
-More info on this [educative.io post](https://www.educative.io/courses/software-design-patterns-best-practices/B8nMkqBWONo)
+More info on this [educative.io post](https://www.educative.io/courses/software-design-patterns-best-practices/B8nMkqBWONo).
+
+## Adapter Pattern
+It is a structural design pattern which is used to make 2 incompatible classes or interfaces work with each other. If Class A returns an object of type P but Class B accepts an object of class Q only, we can create another class or method called the adapter which will take the class P and convert it to class Q. An e.q. in Java is Arrays.asList(array).
+
+Implemented in **StudentAdapter**.
+
+## Strategy Pattern
+It is a behavioural design pattern. It basically suggests to use a Has-A relationship instead of Is-A relationship.
+E.g. A class has a method, which it’s subclasses implement. Now many subclasses will have different implementation of their own but some classes might have same implementation for that method. In this case we will be duplicating our code. To fix this, comes the strategy pattern. Instead of that method, we will add it to an interface. Different classes will implement that method and then the class can just have the implementation of whichever it wants. This way we have made that method a behaviour of the class. This also provides us a way to change the behaviour of a class at run time (dynamically).
+
+Implemented in **Vehicle** and **GearSystem**.
+
+More info [here](https://medium.com/javarevisited/strategy-pattern-in-java-6e97304bf5e5).
