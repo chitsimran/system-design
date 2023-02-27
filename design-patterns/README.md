@@ -28,3 +28,11 @@ More info on this [educative.io post](https://www.educative.io/courses/software-
 It is a structural design pattern which is used to make 2 incompatible classes or interfaces work with each other. If Class A returns an object of type P but Class B accepts an object of class Q only, we can create another class or method called the adapter which will take the class P and convert it to class Q. An e.q. in Java is Arrays.asList(array).
 
 Implemented in **StudentAdapter**.
+
+## Strategy Pattern
+It is a behavioural design pattern. It basically suggests to use a Has-A relationship instead of Is-A relationship.
+E.g. A class has a method, which it’s subclasses implement. Now many subclasses will have different implementation of their own but some classes might have same implementation for that method. In this case we will be duplicating our code. To fix this, comes the strategy pattern. Instead of that method, we will add it to an interface. Different classes will implement that method and then the class can just have the implementation of whichever it wants. This way we have made that method a behaviour of the class. This also provides us a way to change the behaviour of a class at run time (dynamically).
+
+Implemented in **Vehicle** and **GearSystem**.
+
+More info [here](https://medium.com/javarevisited/strategy-pattern-in-java-6e97304bf5e5).
