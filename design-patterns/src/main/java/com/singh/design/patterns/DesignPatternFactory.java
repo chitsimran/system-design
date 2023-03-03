@@ -3,6 +3,7 @@ package com.singh.design.patterns;
 import com.singh.design.patterns.adapter.AdapterPattern;
 import com.singh.design.patterns.builder.BuilderPattern;
 import com.singh.design.patterns.enums.DesignPatternName;
+import com.singh.design.patterns.observer.ObserverPattern;
 import com.singh.design.patterns.strategy.StrategyPattern;
 
 import java.util.Objects;
@@ -49,6 +50,9 @@ public class DesignPatternFactory {
 
             case STRATEGY:
                 return new StrategyPattern();
+
+            case OBSERVER:
+                return new ObserverPattern();
 
             default:
                 throw new IllegalArgumentException("No such pattern implemented!");
