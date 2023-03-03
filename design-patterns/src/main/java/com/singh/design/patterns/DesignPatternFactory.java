@@ -2,6 +2,7 @@ package com.singh.design.patterns;
 
 import com.singh.design.patterns.adapter.AdapterPattern;
 import com.singh.design.patterns.builder.BuilderPattern;
+import com.singh.design.patterns.decorator.DecoratorPattern;
 import com.singh.design.patterns.enums.DesignPatternName;
 import com.singh.design.patterns.observer.ObserverPattern;
 import com.singh.design.patterns.strategy.StrategyPattern;
@@ -53,6 +54,9 @@ public class DesignPatternFactory {
 
             case OBSERVER:
                 return new ObserverPattern();
+
+            case DECORATOR:
+                return new DecoratorPattern();
 
             default:
                 throw new IllegalArgumentException("No such pattern implemented!");
