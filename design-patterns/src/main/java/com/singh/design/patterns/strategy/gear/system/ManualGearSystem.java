@@ -1,4 +1,4 @@
-package com.singh.design.patterns.strategy;
+package com.singh.design.patterns.strategy.gear.system;
 
 public class ManualGearSystem implements GearSystem {
     @Override

@@ -1,4 +1,6 @@
-package com.singh.design.patterns.strategy;
+package com.singh.design.patterns.strategy.car;
+
+import com.singh.design.patterns.strategy.gear.system.GearSystem;
 
 /**
  * Vehicle class (Base class)

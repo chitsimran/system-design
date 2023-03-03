@@ -2,6 +2,10 @@ package com.singh.design.patterns.strategy;
 
 import com.singh.design.patterns.DesignPattern;
 import com.singh.design.patterns.enums.DesignPatternName;
+import com.singh.design.patterns.strategy.car.HeavyWeightCar;
+import com.singh.design.patterns.strategy.car.LuxuryCar;
+import com.singh.design.patterns.strategy.car.SportsCar;
+import com.singh.design.patterns.strategy.car.Vehicle;
 
 public class StrategyPattern implements DesignPattern {
     @Override
