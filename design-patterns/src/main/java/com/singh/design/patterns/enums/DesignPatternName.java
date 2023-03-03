@@ -4,5 +4,6 @@ public enum DesignPatternName {
     OBSERVER,
     STRATEGY,
     BUILDER,
-    ADAPTER
+    ADAPTER,
+    DECORATOR
 }
