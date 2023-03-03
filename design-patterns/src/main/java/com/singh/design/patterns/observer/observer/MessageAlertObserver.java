@@ -9,6 +9,9 @@ public class MessageAlertObserver implements AlertObserver {
         this.stockObservable = stockObservable;
     }
 
+    /**
+     * Updates the object (called when the Subscribed object's state changes)
+     */
     @Override
     public void update() {
         System.out.println("Sent message: Stock available now!");
