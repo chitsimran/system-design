@@ -36,3 +36,12 @@ E.g. A class has a method, which it’s subclasses implement. Now many subclasse
 Implemented in **Vehicle** and **GearSystem**.
 
 More info [here](https://medium.com/javarevisited/strategy-pattern-in-java-6e97304bf5e5).
+
+## Observer Pattern
+It is a behavioural design pattern where when an object’s state changes, we need to notify other objects which have subscribed to it (want to be notified whenever the first object changes).
+E.g. Amazon Notify me button when a product comes back in stock. This uses observer pattern, where when the stock changes for the item all the subscribers who have notified will be notified.
+
+Implemented in **StockObservable**.
+
+## Decorator Pattern
+It is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors. It has both is-a and a has-a relationship. Basically it extends an abstract class and also has the super class as a variable. 
