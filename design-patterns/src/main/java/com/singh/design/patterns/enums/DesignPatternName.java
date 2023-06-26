@@ -5,5 +5,6 @@ public enum DesignPatternName {
     STRATEGY,
     BUILDER,
     ADAPTER,
-    DECORATOR
+    DECORATOR,
+    CHAIN_OF_RESPONSIBILITY
 }

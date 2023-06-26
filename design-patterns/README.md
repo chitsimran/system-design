@@ -45,3 +45,10 @@ Implemented in **StockObservable**.
 
 ## Decorator Pattern
 It is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors. It has both is-a and a has-a relationship. Basically it extends an abstract class and also has the super class as a variable. 
+
+## Chain of Responsibility Pattern
+It is a behavioural design pattern that lets you create a chain of commands. Chain of Responsibility is defined as a design pattern consisting of “a source of command objects and a series of processing objects”.  Each processing object in the chain is responsible for a certain type of command, and the processing is done, it forwards the command to the next processor in the chain.
+
+The Chain of Responsibility pattern is handy for:
+- Decoupling a sender and receiver of a command
+- Picking a processing strategy at processing-time 
