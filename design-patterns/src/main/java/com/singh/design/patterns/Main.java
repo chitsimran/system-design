@@ -8,7 +8,7 @@ public class Main {
 
         DesignPatternFactory designPatternFactory = DesignPatternFactory.getInstance();
 
-        DesignPattern designPattern = designPatternFactory.getDesignPattern(DesignPatternName.BUILDER);
+        DesignPattern designPattern = designPatternFactory.getDesignPattern(DesignPatternName.CHAIN_OF_RESPONSIBILITY);
         System.out.println("Running code for: " + designPattern.getName());
         designPattern.run();
     }
