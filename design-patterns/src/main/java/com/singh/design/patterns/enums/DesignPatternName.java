@@ -6,5 +6,6 @@ public enum DesignPatternName {
     BUILDER,
     ADAPTER,
     DECORATOR,
-    CHAIN_OF_RESPONSIBILITY
+    CHAIN_OF_RESPONSIBILITY,
+    COMPOSITE
 }

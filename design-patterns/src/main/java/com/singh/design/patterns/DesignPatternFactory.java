@@ -3,6 +3,7 @@ package com.singh.design.patterns;
 import com.singh.design.patterns.adapter.AdapterPattern;
 import com.singh.design.patterns.builder.BuilderPattern;
 import com.singh.design.patterns.chain.of.responsibility.ChainOfResponsibilityPattern;
+import com.singh.design.patterns.composite.CompositePattern;
 import com.singh.design.patterns.decorator.DecoratorPattern;
 import com.singh.design.patterns.enums.DesignPatternName;
 import com.singh.design.patterns.observer.ObserverPattern;
@@ -61,6 +62,9 @@ public class DesignPatternFactory {
 
             case CHAIN_OF_RESPONSIBILITY:
                 return new ChainOfResponsibilityPattern();
+
+            case COMPOSITE:
+                return new CompositePattern();
 
             default:
                 throw new IllegalArgumentException("No such pattern implemented!");
