@@ -52,3 +52,10 @@ It is a behavioural design pattern that lets you create a chain of commands. Cha
 The Chain of Responsibility pattern is handy for:
 - Decoupling a sender and receiver of a command
 - Picking a processing strategy at processing-time 
+
+## Composite Pattern
+It is a structural design pattern that allow treating individual objects and compositions of objects, or “composites” in the same way.
+Basically in a design where we see Tree-like structure we can break it down into a composite pattern.
+
+E.g. File System. Here, a directory can have directories in it or a file. Directory and File can act as a tree node, where File will be a Leaf node.
+Another example explained in code is Arithmetic expression where the expression is broken down into a tree with operator and operand as tree nodes.
